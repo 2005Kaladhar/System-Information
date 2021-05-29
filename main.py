@@ -138,8 +138,8 @@ class SystemScreen(QMainWindow):
         self.ui.downloadSpeed.setText('{value:.2f}'.format(value=download/(10**7)))
         
     def processStart(self):
-        edrive = psutil.disk_usage('/home')
-        cdrive = psutil.disk_usage('/')
+        edrive = psutil.disk_usage('E://')
+        cdrive = psutil.disk_usage('C://')
             
         eused = (90/100)* ( (edrive.used/edrive.total)*100)
         cused  = (90/100)* ( (cdrive.used/cdrive.total)*100)
@@ -171,8 +171,8 @@ class SystemScreen(QMainWindow):
 
 
             
-            edrive = psutil.disk_usage('/home')
-            cdrive = psutil.disk_usage('/usr/bin')
+            edrive = psutil.disk_usage('E://')
+            cdrive = psutil.disk_usage('C://')
             
             # eused = (90/100)* ( (edrive.used/edrive.total)*100)
             # cused  = (90/100)* ( (cdrive.used/cdrive.total)*100)
