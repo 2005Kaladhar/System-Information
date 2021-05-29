@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>388</width>
+    <height>388</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QFrame" name="WhiteCircle">
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+
+border-radius: 185px;
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:0, stop:0.249 rgba(255, 255, 255, 255), stop:0.25 rgba(0, 0, 0, 255));
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QFrame" name="OrangeCircle">
+         <property name="styleSheet">
+          <string notr="true">QFrame{
+border-radius:175px;
+	background-color: qconicalgradient(cx:0.5, cy:0.5, angle:180, stop:0.249 rgba(255, 255, 255, 255), stop:0.25 rgba(255, 170, 0, 230));
+
+}</string>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_2">
+          <item>
+           <widget class="QFrame" name="TitleFrame">
+            <property name="styleSheet">
+             <string notr="true">QFrame{
+border-radius:167px;
+	background-color: rgb(0, 0, 0);
+
+}</string>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
